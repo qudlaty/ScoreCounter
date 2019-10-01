@@ -1,0 +1,29 @@
+body {
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  font-size: 4vw;
+  padding: 3vw;
+  display: block;
+}
+
+input {
+  max-width: 30vw;
+  text-align: center;
+  border: solid 1px;
+  font-size: 5vw;
+  padding: 2vw;
+  margin: auto;
+  display: block;
+}
+
+button{
+  margin: 5vw;
+  font-size: 3vw
+}
+
+.won {
+	color: forestgreen;
+}
