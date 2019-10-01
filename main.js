@@ -1,4 +1,3 @@
-/*alert('connnected');*/
 
 const h1P1 = document.querySelector("#p1Scr"),
       h1P2 = document.querySelector("#p2Scr"),
@@ -9,12 +8,11 @@ let p1Scr = 0,
     p2Scr = 0,
     gameOver = false;
 
-
 let maxP = document.querySelector("p span"),
     inp = document.querySelector("input"),
     winSc = inp.value; 
 
-// set max score s
+// set max scores
 inp.addEventListener('change',function(){
 	maxP.textContent = this.value;
 	winSc = Number(this.value);
@@ -28,6 +26,7 @@ p1.addEventListener("click",function(){
 		if(p1Scr === winSc){
 			gameOver = true;
 			h1P1.classList.add("won");
+      h1P2.classList.add("lose");
 		};
 		h1P1.textContent = p1Scr;
 	}
@@ -40,6 +39,7 @@ p2.addEventListener("click",function(){
 		if(p2Scr === winSc){	
 			gameOver = true;
 			h1P2.classList.add("won");
+      h1P1.classList.add("lose");
 		};
 		h1P2.textContent = p2Scr;
 	}
@@ -59,8 +59,8 @@ function resetAll() {
 	h1P1.textContent = 0;
 	h1P2.textContent = 0;
 	
-	h1P1.classList.remove("won");
-	h1P2.classList.remove("won");
+	h1P1.classList.remove("won", "lose");
+	h1P2.classList.remove("won", "lose");
   gameOver = false;
 }
 

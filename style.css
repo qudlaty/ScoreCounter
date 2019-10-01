@@ -1,6 +1,18 @@
 body {
+  height: 100%;
   margin: auto;
   text-align: center;
+  background-color: azure;
+}
+
+h1 {
+  font-size: 5vw;
+}
+
+h1 span {
+  border: solid 2px black;
+  margin: 2vw;
+  padding: 0px 10px;
 }
 
 p {
@@ -15,15 +27,31 @@ input {
   border: solid 1px;
   font-size: 5vw;
   padding: 2vw;
-  margin: auto;
-  display: block;
+  border-radius: 2vw;
+  background-color: floralwhite;
 }
 
 button{
-  margin: 5vw;
-  font-size: 3vw
+  margin: 3vw;
+  font-size: 3vw;
+  border-radius: 1vw;
+  padding: 1.5vw;
+}
+
+.btnP {
+  background-color: lightblue;
+}
+
+#reset {
+  background-color: rgba(210, 90, 50, .6);
 }
 
 .won {
+  background-color: aquamarine;
 	color: forestgreen;
+}
+
+.lose {
+  background-color: coral;
+	color: crimson;
 }
