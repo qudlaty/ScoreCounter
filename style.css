@@ -1,45 +1,85 @@
 body {
   height: 100%;
-  margin: auto;
+  margin:  0 auto;
   text-align: center;
   background-color: azure;
 }
 
-h1 {
-  font-size: 5vw;
-}
-
-h1 span {
-  border: solid 2px black;
-  margin: 2vw;
-  padding: 0px 10px;
-}
-
 p {
-  font-size: 4vw;
-  padding: 3vw;
+  font-size: 4vh;
+  padding: 2vh 0;
+  margin-bottom: 0;
   display: block;
 }
 
 input {
-  max-width: 30vw;
+  margin: 0 auto;
   text-align: center;
   border: solid 1px;
-  font-size: 5vw;
-  padding: 2vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
   background-color: floralwhite;
 }
 
-button{
-  margin: 3vw;
-  font-size: 3vw;
-  border-radius: 1vw;
-  padding: 1.5vw;
+@media (max-width: 1079px) {
+   input {
+     max-width: 50vw;
+     font-size: 5vh;
+     padding: 2px;
+  }
+  h1 {
+    font-size: 5vh;
+    padding: 10px 0;
+  }
+  .players-span {
+    border: solid 1px black;
+    margin: 2vw;
+    padding: 1vh 3vw;
+  }
+  .btn {
+    margin: 3vw;
+    font-size: 5vw;
+    border-radius: 1vw;
+    padding: 1.5vw;
+  }
 }
 
-.btnP {
-  background-color: lightblue;
+@media (min-width: 1080px) {
+  input {
+     max-width: 25vw;
+     font-size: 8vh;
+     padding: 2px;
+  }
+  
+  h1 {
+    font-size: 10vh;
+    padding: 1vh 0;
+  }
+  .players-span {
+    border: solid 2px black;
+    margin: 2vw;
+    padding: 1.5vh 3vw;
+  }
+  .btn {
+    margin: 4vw;
+    font-size: 4vw;
+    border-radius: 1vw;
+    padding: 1vw;
+  }
+}
+
+.btns-wrap {
+  padding: 4vh 0 1vh;
+}
+
+.btn:hover {
+  color:red;
+}
+
+.btn-player {
+  background-color: cornflowerblue;
+}
+.btn-player:hover {
+  color: greenyellow;
 }
 
 #reset {
